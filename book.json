@@ -8,7 +8,9 @@
     "plugins": [
         "donate",
         "github-buttons@2.1.0",
-        "edit-link"
+        "edit-link",
+        "copyright",
+        "readmore"
     ],
 
     "pluginsConfig": {
@@ -30,6 +32,18 @@
         "edit-link": {
             "base": "https://github.com/darrenliuwei/gitbook/edit/master",
             "label": "Edit This Page"
+        },
+        "copyright": {
+        "site": "https://mc.dfrobot.com.cn/",
+        "author": "DF创客社区",
+        "website": "DF创客社区",
+        "image": "https://mc.dfrobot.com.cn/template/zhanzhuai_v/images/logo.png"
+      },
+      "readmore":{
+            "blogId": "21047-1585724546375-833",
+            "name": "DF创客社区",
+            "qrcode": "http://df.yirenliu.cn/FrbGVMroj_tBa1OR9EcyPBzJ3ba_",
+            "keyword": "VIP"
         }
     }
 }
