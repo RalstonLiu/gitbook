@@ -10,7 +10,9 @@
         "github-buttons@2.1.0",
         "edit-link",
         "copyright",
-        "readmore"
+        "readmore",
+        "tbfed-pagefooter",
+        "mygitalk"
     ],
 
     "pluginsConfig": {
@@ -44,6 +46,19 @@
             "name": "DF创客社区",
             "qrcode": "http://df.yirenliu.cn/FrbGVMroj_tBa1OR9EcyPBzJ3ba_",
             "keyword": "VIP"
-        }
+        },
+        "tbfed-pagefooter": {
+          "copyright":"&copy DF创客社区",
+          "modify_label": "文件修订时间：",
+          "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "mygitalk": {
+       "clientID": "080aebb9a762ed51c5d9",
+       "clientSecret": "1abbb460c75e055fbd51c6e04c6b7b4ac47a6e69",
+       "repo": "gitbook",
+       "owner": "RalstonLiu",
+       "admin": ["RalstonLiu"],
+       "distractionFreeMode": false
+   }
     }
 }
