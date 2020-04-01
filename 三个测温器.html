@@ -1,0 +1,679 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>三个测温器 · 编写gitbook电子书教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sphard">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="时空传送枪.html" />
+    
+    
+    <link rel="prev" href="哈士奇.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"darrenliuwei/gitbook","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="哈士奇.html">
+            
+                <a href="哈士奇.html">
+            
+                    
+                    哈士奇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="三个测温器.html">
+            
+                <a href="三个测温器.html">
+            
+                    
+                    三个测温器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="时空传送枪.html">
+            
+                <a href="时空传送枪.html">
+            
+                    
+                    时空传送枪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="树莓派是什么？能吃吗？.html">
+            
+                <a href="树莓派是什么？能吃吗？.html">
+            
+                    
+                    树莓派是什么？能吃吗？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >三个测温器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                
+                <div id="vip-container">
+                    <h2 id="&#x5B85;&#x5BB6;&#x7279;&#x8BAD;&#x7F09;&#x75AB;&#x72AC;&#xFF0C;&#x534F;&#x529B;&#x6297;&#x51FB;&#x65B0;&#x80BA;&#x708E;&#x2014;&#x2014;&#x57FA;&#x4E8E;huskylens&#x7684;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x81EA;&#x52A8;&#x8DDF;&#x8E2A;&#x6D4B;&#x6E29;&#x88C5;&#x7F6E;">&#x5B85;&#x5BB6;&#x7279;&#x8BAD;&#x201C;&#x7F09;&#x75AB;&#x72AC;&#x201D;&#xFF0C;&#x534F;&#x529B;&#x6297;&#x51FB;&#x65B0;&#x80BA;&#x708E;&#x2014;&#x2014;&#x57FA;&#x4E8E;HuskyLens&#x7684;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x81EA;&#x52A8;&#x8DDF;&#x8E2A;&#x6D4B;&#x6E29;&#x88C5;&#x7F6E;</h2>
+<p>&#x4F5C;&#x8005;&#xFF1A;&#x72C4;&#x8001;&#x5E08;
+<a href="https://mc.dfrobot.com.cn/thread-302584-1-1.html" target="_blank">https://mc.dfrobot.com.cn/thread-302584-1-1.html</a></p>
+<p><img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/29/124852jtz56rlxpu11g5p5.jpg" alt=""></p>
+<h5 id="&#x539F;&#x6599;&#x6E05;&#x5355;">&#x539F;&#x6599;&#x6E05;&#x5355;</h5>
+<ul>
+<li>&#x638C;&#x63A7;&#x677F; &#xD7;1</li>
+<li>micro:bit&#x638C;&#x63A7;I/O&#x6269;&#x5C55;&#x677F; &#xD7;1</li>
+<li>&#x8FF7;&#x4F60;2&#x81EA;&#x7531;&#x5EA6;&#x4E91;&#x53F0; &#xD7;1</li>
+<li>Gravity: HUSKYLENS --&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x6444;&#x50CF;&#x5934; &#xD7;1</li>
+<li>MLX90614&#x975E;&#x63A5;&#x89E6;&#x5F0F;&#x7EA2;&#x5916;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668; &#xD7;1
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154322z31y3zny13yqyx33.png" alt="">
+&#x672C;&#x9879;&#x76EE;&#x662F;&#x4EE5;&#x57FA;&#x4E8E;HuskyLens&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x7684;&#x4E8C;&#x81EA;&#x7531;&#x5EA6;&#x81EA;&#x52A8;&#x8DDF;&#x8E2A;&#x4E91;&#x53F0;&#x5236;&#x4F5C;&#x7684;
+&#x6240;&#x4EE5;&#x6750;&#x6599;&#x65B9;&#x9762;&#x53EA;&#x9700;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x9879;&#x76EE;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x8865;&#x5145;&#x4E00;&#x4E2A;&#x975E;&#x63A5;&#x89E6;&#x5F0F;&#x7EA2;&#x5916;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154423jg24bgnidskbghlk.jpg" alt=""><h5 id="&#x7EBF;&#x8DEF;&#x8FDE;&#x63A5;">&#x7EBF;&#x8DEF;&#x8FDE;&#x63A5;</h5>
+&#x6070;&#x597D;DF&#x7684;&#x8FD9;&#x6B3E;IO&#x6269;&#x5C55;&#x677F;&#x6709;&#x4E24;&#x4E2A;IIC&#x63A5;&#x53E3;&#xFF0C;&#x4E00;&#x4E2A;&#x7ED9;&#x54C8;&#x58EB;&#x5947;&#xFF0C;&#x4E00;&#x4E2A;&#x7ED9;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x7528;.
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/171034h369ltyjr9ttjhjh.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/170843v50s5gs1lw57vw58.png" alt="&#x8FDE;&#x7EBF;&#x793A;&#x610F;&#x56FE;"><h5 id="&#x7ED3;&#x6784;&#x642D;&#x5EFA;">&#x7ED3;&#x6784;&#x642D;&#x5EFA;</h5>
+&#x7ED3;&#x6784;&#x90E8;&#x5206;&#x7684;&#x7EC4;&#x88C5;&#x8FD8;&#x8BF7;&#x53C2;&#x89C1;&#x57FA;&#x4E8E;HuskyLens&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x7684;&#x4E8C;&#x81EA;&#x7531;&#x5EA6;&#x81EA;&#x52A8;&#x8DDF;&#x8E2A;&#x4E91;&#x53F0;
+&#x8FD9;&#x91CC;&#x8981;&#x8FFD;&#x52A0;&#x5B89;&#x88C5;MLX90614
+&#x56E0;&#x4E3A;&#x5047;&#x671F;&#x6CA1;&#x6709;&#x522B;&#x7684;&#x6750;&#x6599;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;
+&#x6682;&#x65F6;&#x5229;&#x7528;&#x54C8;&#x58EB;&#x5947;&#x914D;&#x5957;&#x652F;&#x67B6;&#x7684;&#x87BA;&#x5B54;
+&#x914D;&#x5408;&#x57AB;&#x7247;&#x914D;&#x5E73;&#x5DE6;&#x53F3;&#x94DC;&#x67F1;&#x9AD8;&#x5EA6;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154525lm2b222p6svzahns.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154534k7gatzdene3mejnj.jpg" alt="">
+&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x7684;&#x6837;&#x5B50;
+&#x6709;&#x6761;&#x4EF6;&#x7684;&#x8BDD;&#x5E94;&#x8BE5;&#x6253;&#x5370;&#x4E00;&#x4E2A;&#x652F;&#x67B6;&#xFF0C;&#x5B89;&#x88C5;&#x5230;&#x6444;&#x50CF;&#x5934;&#x4E0A;&#x65B9;
+&#x8FD9;&#x6837;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;
+&#x5E94;&#x8BE5;&#x66F4;&#x5BB9;&#x6613;&#x5BF9;&#x51C6;&#x8111;&#x95E8;<h5 id="&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;">&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;</h5>
+&#x4F5C;&#x4E3A;&#x6559;&#x4E66;&#x5320;
+&#x9996;&#x76F8;&#x60F3;&#x5230;&#x7684;&#x9879;&#x76EE;&#x5E94;&#x7528;&#x573A;&#x666F;&#x81EA;&#x7136;&#x662F;&#x6821;&#x56ED;
+&#x4F46;&#x51E1;&#x6D41;&#x884C;&#x75C5;&#x7206;&#x53D1;
+&#x73ED;&#x7EA7;&#x4F1A;&#x4F8B;&#x884C;&#x6668;&#x68C0;
+&#x7ED9;&#x6BCF;&#x4E2A;&#x5B66;&#x751F;&#x6D4B;&#x91CF;&#x4F53;&#x6E29;
+&#x8FD9;&#x4E8B;&#x786E;&#x5B9E;&#x8981;&#x7D27;
+&#x4F46;&#x53C8;&#x5B9E;&#x5728;&#x7E41;&#x7410;
+&#x6240;&#x4EE5;&#x529F;&#x80FD;&#x4E0A;&#x4E00;&#x5B9A;&#x8981;&#x6709;&#x5173;&#x8054;&#x5B66;&#x53F7;&#x7684;&#x6570;&#x636E;&#x6C47;&#x603B;&#x529F;&#x80FD;
+&#x4EE5;&#x4FBF;&#x7ED9;&#x73ED;&#x4E3B;&#x4EFB;&#x4EEC;&#x51CF;&#x8D1F;
+&#x57FA;&#x4E8E;&#x8FD9;&#x6837;&#x7684;&#x9700;&#x6C42;&#xFF0C;
+&#x7ED3;&#x5408;SIoT&#x4F1A;&#x662F;&#x4E2A;&#x597D;&#x9009;&#x62E9;</li>
+</ul>
+<p>&#x4EBA;&#x8138;&#x8DDF;&#x8E2A;&#x65B9;&#x9762;
+&#x57FA;&#x4E8E;&#x81EA;&#x52A8;&#x8DDF;&#x8E2A;&#x4E91;&#x53F0;&#x7684;&#x601D;&#x8DEF;&#xFF0C;
+&#x8FD9;&#x56DE;&#x5212;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;10*4&#x50CF;&#x7D20;&#x7684;&#x76EE;&#x6807;&#x533A;&#x57DF;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154626i4e7nh9ddvn9x5v6.png" alt="">
+&#x5F53;&#x5BF9;&#x8C61;&#x65B9;&#x6846;&#x4E2D;&#x5FC3;&#x70B9;&#x4F4D;&#x4E8E;&#x4E0B;&#x56FE;&#x9EC4;&#x8272;&#x9AD8;&#x4EAE;&#x533A;&#x57DF;&#x5185;&#x65F6;
+&#x7CFB;&#x7EDF;&#x4F1A;&#x8BA4;&#x4E3A;&#x4EBA;&#x8138;&#x5DF2;&#x88AB;&#x9501;&#x5B9A;&#xFF0C;
+&#x53EF;&#x4EE5;&#x53D1;&#x5C04;&#xFF0C;&#x54E6;&#x4E0D;&#x662F;
+&#x53EF;&#x4EE5;&#x6D4B;&#x6E29;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154644qi7mw7ssiossieik.png" alt="">
+&#x5BF9;&#x4E8E;&#x6D4B;&#x6E29;&#x7ED3;&#x679C;&#x7684;&#x63D0;&#x793A;&#x529F;&#x80FD;
+&#x7279;&#x610F;&#x767E;&#x5EA6;&#x4E86;&#x4E0B;
+&#x6B63;&#x5E38;&#x4EBA;&#x4F53;&#x6E29;&#x5E94;&#x4F4E;&#x4E8E;37.2&#x2103;
+&#x4E0D;&#x8FC7;&#x8FD9;&#x662F;&#x6307;&#x53E3;&#x8154;&#x6E29;&#x5EA6;
+&#x989D;&#x5934;&#x6E29;&#x5EA6;&#x8FD8;&#x8981;&#x8003;&#x7A76;&#x4E0B;
+&#x6682;&#x4E14;&#x8BBE;&#x5B9A;&#x4E3A;
+&#x4F4E;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;37.2&#x2103;&#x4EAE;&#x7EFF;&#x706F;
+&#x9AD8;&#x4E8E;37.2&#x2103;&#x4EAE;1&#x76CF;&#x7EA2;&#x706F;
+&#x9AD8;&#x4E8E;38&#x2103;&#x4EAE;2&#x76CF;&#x7EA2;&#x706F;
+&#x9AD8;&#x4E8E;38.5&#x2103;&#x4EAE;3&#x76CF;&#x7EA2;&#x706F;
+&#x76F8;&#x5E94;&#x7684;&#x8FD8;&#x6709;&#x8B66;&#x793A;&#x97F3;&#x5F3A;&#x5316;&#x63D0;&#x9192;</p>
+<p>&#x7A0B;&#x5E8F;&#x6BD4;&#x8F83;&#x957F;&#xFF0C;&#x5927;&#x81F4;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154708c38tt2k221hk2orf.png" alt="">
+&#x6709;&#x5173;SIoT&#x7684;&#x4F7F;&#x7528;
+&#x8BF7;&#x53C2;&#x89C1;&#x5F80;&#x671F;&#x6587;&#x7AE0;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154726ofqvdcpd3k3e35lz.png" alt=""></p>
+<h5 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h5>
+<p>&#x53C8;&#x5230;&#x5173;&#x95E8;&#x653E;&#x4E8C;&#x54C8;&#x7684;&#x65F6;&#x5019;&#x4E86;
+&#x4E0D;&#x8FC7;&#x6211;&#x4EEC;&#x8FD9;&#x53EA;&#x4E8C;&#x54C8;&#x6BD4;&#x8F83;&#x4E56;
+&#x4F7F;&#x547D;&#x5FC5;&#x8FBE;
+&#x7EDD;&#x4E0D;&#x6363;&#x4E71;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154839tggaulle44xo225b.gif" alt="">
+&#x521D;&#x59CB;&#x5316;HuskyLens&#x3001;WIFI&#x3001;MQTT
+&#x5B8C;&#x6210;&#x540E;&#x663E;&#x793A;&#x73AF;&#x5883;&#x6E29;&#x5EA6;&#x4F9B;&#x53C2;&#x8003;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154853h3j9sy3oyqqhttyt.gif" alt="">
+&#x627E;&#x4E86;&#x56DB;&#x4E2A;&#x5C0F;&#x4F19;&#x4F34;&#x53C2;&#x4E0E;&#x5B9E;&#x9A8C;
+&#x6BD5;&#x7ADF;&#x4E0D;&#x662F;&#x6D3B;&#x4F53;
+&#x524D;&#x4E09;&#x4F4D;&#x5851;&#x6599;&#x540C;&#x5B66;&#x7684;&#x4F53;&#x6E29;
+&#x57FA;&#x672C;&#x5C31;&#x662F;&#x73AF;&#x5883;&#x6E29;&#x5EA6;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154914cr9rq4u3h9rh9sh3.gif" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154923t7yi777b77y64ywe.gif" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154937rh8n0ou0tllnlfut.gif" alt="">
+4&#x53F7;&#x6A31;&#x6843;&#x5C0F;&#x4E38;&#x5B50;&#x540C;&#x5B66;
+&#x518D;&#x4E0D;&#x53D1;&#x70E7;&#x5C31;&#x6CA1;&#x6837;&#x672C;&#x4E86;
+&#x4E0D;&#x597D;&#x610F;&#x601D;&#x53EA;&#x80FD;&#x4E0B;&#x9ED1;&#x624B;
+&#x62FF;&#x676F;&#x6E29;&#x6C34;&#x6321;&#x5728;&#x524D;&#x9762;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/154943epo9yqdwdtoqs5bm.gif" alt="">
+&#x4E00;&#x9732;&#x8111;&#x888B;
+38.9
+&#x901F;&#x901F;&#x62C9;&#x53BB;&#x9694;&#x79BB;&#xFF01;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/155017tzqo7hp2q8cggd9g.jpg" alt="">
+&#x6253;&#x5F00;SIoT&#x540E;&#x53F0;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x88C5;&#x7F6E;&#x4E0A;&#x4F20;&#x7684;&#x6570;&#x636E;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/155032i971az8n4001809y.png" alt="">
+&#x8FD9;&#x662F;&#x5BFC;&#x51FA;&#x5E76;&#x6574;&#x7406;&#x540E;&#x7684;Excel&#x8868;&#x683C;
+&#x5982;&#x679C;&#x6709;&#x667A;&#x6167;&#x6821;&#x56ED;&#x5E73;&#x53F0;
+&#x6839;&#x636E;&#x5BF9;&#x5E94;&#x6A21;&#x677F;&#x4FEE;&#x6539;&#x8868;&#x683C;
+&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5BFC;&#x5165;&#x4E86;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/155051txbzxeko8n37433e.png" alt="">
+&#x4E0B;&#x9762;&#x653E;&#x4E0A;&#x4E00;&#x6BB5;&#x6D4B;&#x8BD5;&#x89C6;&#x9891;
+<a href="https://v.qq.com/x/page/j3057jsd5so.html" target="_blank">https://v.qq.com/x/page/j3057jsd5so.html</a></p>
+<h5 id="&#x9879;&#x76EE;&#x5C0F;&#x7ED3;">&#x9879;&#x76EE;&#x5C0F;&#x7ED3;</h5>
+<p>&#x6709;&#x8001;&#x5E08;&#x5728;&#x670B;&#x53CB;&#x5708;&#x7ED9;&#x6211;&#x7559;&#x8A00;&#x5F00;&#x5B66;&#x5B66;&#x6821;&#x53EF;&#x4EE5;&#x8BD5;&#x7528;&#x5566;
+&#x8BF4;&#x5B9E;&#x8BDD;&#xFF0C;&#x5728;&#x7CBE;&#x5EA6;&#x3001;&#x53EF;&#x9760;&#x6027;&#x65B9;&#x9762;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x8FDC;&#x4E0D;&#x591F;&#x5B8C;&#x5584;&#xFF0C;&#x82E5;&#x8981;&#x89C4;&#x6A21;&#x5E94;&#x7528;&#x66F4;&#x662F;&#x95EE;&#x9898;&#x591A;&#x591A;&#x3002;&#x4F46;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x521B;&#x610F;&#x539F;&#x578B;&#xFF0C;&#x5BF9;&#x4E8E;&#x529F;&#x80FD;&#x7684;&#x5C55;&#x793A;&#x8FD8;&#x662F;&#x660E;&#x6670;&#x7684;&#x3002;&#x5982;&#x679C;&#x6709;&#x4F01;&#x4E1A;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x521B;&#x610F;&#x8F6C;&#x5316;&#x6210;&#x53EF;&#x9760;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x5E76;&#x4E14;&#x63A5;&#x9A73;&#x6559;&#x80B2;&#x901A;&#x7B49;&#x667A;&#x6167;&#x6821;&#x56ED;&#x5E73;&#x53F0;&#xFF0C;&#x5173;&#x8054;&#x5B66;&#x751F;&#x7684;&#x8003;&#x52E4;&#x3001;&#x8BF7;&#x5047;&#x7CFB;&#x7EDF;&#xFF0C;&#x4E00;&#x5B9A;&#x80FD;&#x7ED9;&#x5B66;&#x6821;&#x7684;&#x7BA1;&#x7406;&#x5DE5;&#x4F5C;&#x63D0;&#x6548;&#x51CF;&#x8D1F;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;
+&#x5185;&#x5FC3;&#x8FD8;&#x662F;&#x5E0C;&#x671B;&#x201C;&#x7F09;&#x75AB;&#x72AC;&#x201D;&#x5C11;&#x6709;&#x7528;&#x6B66;&#x4E4B;&#x5730;
+&#x4E8C;&#x54C8;&#x4E13;&#x804C;&#x5356;&#x840C;&#x72AF;&#x4E8C;&#x5C31;&#x597D;
+&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x5065;&#x5EB7;&#x5E73;&#x5B89;
+&#x773C;&#x4E0B;&#x6700;&#x8F9B;&#x82E6;&#x7684;&#x5C31;&#x662F;&#x533B;&#x751F;&#x4EEC;
+&#x4EB2;&#x670B;&#x4E2D;&#x4E5F;&#x6709;&#x5F53;&#x533B;&#x751F;&#x7684;
+&#x5176;&#x4E2D;&#x4E00;&#x4F4D;&#x6B63;&#x6218;&#x6597;&#x5728;&#x9694;&#x79BB;&#x75C5;&#x623F;
+&#x5E0C;&#x671B;&#x4F60;&#x4EEC;&#x7167;&#x987E;&#x597D;&#x6218;&#x6597;&#x5728;&#x524D;&#x7EBF;&#x7684;&#x81EA;&#x5DF1;
+&#x4E00;&#x5B9A;&#x51EF;&#x65CB;&#x800C;&#x5F52;
+<img src="https://mc.dfrobot.com.cn/data/attachment/album/202001/27/155310cxdfnmex7dr7emf7.gif" alt="">
+&#x5411;&#x767D;&#x8863;&#x5929;&#x4F7F;&#x81F4;&#x656C;
+&#x9ED1;&#x6697;&#x591A;&#x8BA9;&#x4EBA;&#x54AC;&#x7259;&#x5207;&#x9F7F;&#xFF0C;
+&#x5149;&#x660E;&#x5C31;&#x591A;&#x8BA9;&#x4EBA;&#x70ED;&#x6CEA;&#x76C8;&#x7736;&#xFF01;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/29/124804yxx9cc79c7ckxv7b.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/27/155356c784t4g8rglalr77.gif" alt=""></p>
+<h2 id="&#x591A;&#x638C;&#x63A7;&#x65E0;&#x7EBF;&#x6D4B;&#x6E29;&#x4EEA;">&#x591A;&#x638C;&#x63A7;&#x65E0;&#x7EBF;&#x6D4B;&#x6E29;&#x4EEA;</h2>
+<p>&#x4F5C;&#x8005;&#xFF1A;&#x4E14;&#x6B4C;&#x4E14;&#x884C;
+<a href="https://mc.dfrobot.com.cn/thread-302719-1-1.html" target="_blank">https://mc.dfrobot.com.cn/thread-302719-1-1.html</a>
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/232749naivv9aarrebiciy.png" alt=""></p>
+<h5 id="&#x9879;&#x76EE;&#x80CC;&#x666F;">&#x9879;&#x76EE;&#x80CC;&#x666F;</h5>
+<p>&#x76EE;&#x524D;&#xFF0C;&#x75AB;&#x60C5;&#x5F62;&#x52BF;&#x4E25;&#x5CFB;&#xFF0C;&#x6E56;&#x5317;&#x7701;&#x65B0;&#x589E;&#x75C5;&#x4F8B;&#x4F9D;&#x7136;&#x5C45;&#x9AD8;&#x4E0D;&#x4E0B;&#xFF0C;&#x5404;&#x5730;&#x88AB;&#x9694;&#x79BB;&#x89C2;&#x5BDF;&#x7684;&#x4EBA;&#x5458;&#x6570;&#x76EE;&#x4E5F;&#x975E;&#x5E38;&#x5E9E;&#x5927;&#x3002;&#x201C;&#x591A;&#x638C;&#x63A7;&#x65E0;&#x7EBF;&#x6D4B;&#x6E29;&#x4EEA;&#x201D;&#x53EF;&#x5B9A;&#x65F6;&#x63D0;&#x9192;&#x88AB;&#x6D4B;&#x4EBA;&#x5458;&#x6D4B;&#x91CF;&#x4F53;&#x6E29;&#xFF0C;&#x5E76;&#x5C06;&#x6D4B;&#x6E29;&#x7ED3;&#x679C;&#x901A;&#x8FC7;MQTT&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x53D1;&#x9001;&#x5230;&#x63A5;&#x6536;&#x7AEF;&#x3002;&#x5982;&#x679C;&#x4F53;&#x6E29;&#x5F02;&#x5E38;&#xFF0C;&#x6D4B;&#x6E29;&#x7AEF;&#x548C;&#x63A5;&#x6536;&#x7AEF;&#x90FD;&#x4F1A;&#x53D1;&#x51FA;&#x8B66;&#x544A;&#xFF0C;&#x8BA9;&#x6D4B;&#x6E29;&#x4EBA;&#x5458;&#x53CA;&#x533B;&#x52A1;&#x4EBA;&#x5458;&#x90FD;&#x80FD;&#x591F;&#x53CA;&#x65F6;&#x5904;&#x7F6E;&#x3002;&#x6B64;&#x6D4B;&#x6E29;&#x4EEA;&#x7684;&#x5B9A;&#x65F6;&#x63D0;&#x9192;&#x529F;&#x80FD;&#x65B9;&#x4FBF;&#x6D4B;&#x6E29;&#x8005;&#x5B9A;&#x65F6;&#x76D1;&#x6D4B;&#xFF0C;&#x4EE5;&#x514D;&#x5FD8;&#x8BB0;&#xFF1B;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x529F;&#x80FD;&#x5219;&#x8BA9;&#x533B;&#x52A1;&#x4EBA;&#x5458;&#x7701;&#x53BB;&#x5954;&#x6CE2;&#x52B3;&#x7D2F;&#x4E4B;&#x82E6;&#x3001;&#x63A5;&#x89E6;&#x75C5;&#x6BD2;&#x4E4B;&#x9669;&#xFF0C;&#x8DB3;&#x4E0D;&#x51FA;&#x6237;&#x4FBF;&#x80FD;&#x8BB0;&#x5F55;&#x6D4B;&#x6E29;&#x8005;&#x7684;&#x4F53;&#x6E29;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/232845t7h4rlcjwizmvm4l.jpg" alt=""></p>
+<h5 id="&#x6240;&#x7528;&#x5668;&#x6750;&#xFF1A;">&#x6240;&#x7528;&#x5668;&#x6750;&#xFF1A;</h5>
+<ul>
+<li>&#x638C;&#x63A7;&#x677F;1.0 *2</li>
+<li>&#x638C;&#x63A7;&#x677F;2.0 *1</li>
+<li>&#x767E;&#x7075;&#x9E3D;2.0 *1</li>
+<li>&#x638C;&#x63A7;&#x5B9D; *1</li>
+<li>DHT11 &#x6E29;&#x6E7F;&#x5EA6;&#x4F20;&#x611F;&#x5668; *2&#x867D;&#x7136;LOW&#xFF0C;&#x4F46;&#x662F;&#x6BD4;&#x6CA1;&#x6709;&#x5F3A;&#x5440;&#x2026;&#x2026;&#xFF09;</li>
+<li>&#x53D6;&#x6696;&#x5668; *1&#xFF08;&#x4E0D;&#x662F;&#x5FC5;&#x5907;&#xFF0C;&#x6211;&#x53EA;&#x662F;&#x7528;&#x4ED6;&#x6765;&#x8C03;&#x4F53;&#x6E29;&#x504F;&#x9AD8;&#x72B6;&#x6001;&#xFF09;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/015409nplnf10zj0zzmo7i.jpg" alt=""><h5 id="&#x8BBE;&#x8BA1;&#x601D;&#x8DEF;">&#x8BBE;&#x8BA1;&#x601D;&#x8DEF;</h5>
+&#x4E0D;&#x68C0;&#x6D4B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E09;&#x4E2A;&#x638C;&#x63A7;&#x677F;&#x4E0A;&#x90FD;&#x663E;&#x793A;&#x65F6;&#x95F4;&#x3002;&#x5230;&#x6D4B;&#x6E29;&#x7684;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x65F6;&#xFF0C;&#x6D4B;&#x6E29;&#x638C;&#x63A7;&#x677F;&#x8BED;&#x97F3;&#x63D0;&#x9192;&#x201C;&#x8BF7;&#x6D4B;&#x4F53;&#x6E29;&#x201D;&#xFF0C;&#x6D4B;&#x6E29;&#x540E;&#xFF0C;&#x638C;&#x63A7;&#x677F;&#x4E0A;&#x663E;&#x793A;&#x4F53;&#x6E29;&#xFF0C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x53D1;&#x9001;&#x5230;MQTT&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x53D1;&#x9001;&#x5230;&#x63A5;&#x6536;&#x7684;&#x638C;&#x63A7;&#x677F;&#x4E0A;&#x3002;&#x6D4B;&#x6E29;&#x7AEF;&#x548C;&#x63A5;&#x6536;&#x7AEF;&#x5BF9;&#x7ED3;&#x679C;&#x4F5C;&#x51FA;&#x5224;&#x65AD;&#xFF0C;&#x5982;&#x679C;&#x4F53;&#x6E29;&#x6B63;&#x5E38;&#xFF0C;&#x6D4B;&#x6E29;&#x7AEF;&#x64AD;&#x62A5;&#x201C;&#x4F53;&#x6E29;&#x6B63;&#x5E38;&#xFF0C;&#x8BF7;&#x6D88;&#x6BD2;&#x201D;&#xFF0C;&#x63A5;&#x6536;&#x7AEF;&#x4E0D;&#x4F5C;&#x4EFB;&#x4F55;&#x63D0;&#x9192;&#x3002;&#x5982;&#x679C;&#x4F53;&#x6E29;&#x504F;&#x9AD8;&#xFF0C;&#x6D4B;&#x6E29;&#x7AEF;&#x64AD;&#x62A5;&#x201C;&#x4F53;&#x6E29;&#x504F;&#x9AD8;&#x201D;&#xFF0C;&#x63A5;&#x6536;&#x7AEF;&#x5219;&#x7EA2;&#x706F;&#x95EA;&#x70C1;&#x3001;&#x8702;&#x9E23;&#x5668;&#x53D1;&#x51FA;&#x8B66;&#x62A5;&#x58F0;&#x3002;&#x6D4B;&#x6E29;&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x53EF;&#x5728;MQTT&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x4E0B;&#x8F7D;&#xFF0C;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;&#x8005;&#x4E86;&#x89E3;&#x6D4B;&#x6E29;&#x8005;&#x7684;&#x4F53;&#x6E29;&#x53D8;&#x5316;&#x60C5;&#x51B5;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233130hkvr0v7kb3e87r8h.png" alt=""><h5 id="&#x5668;&#x6750;&#x8FDE;&#x63A5;">&#x5668;&#x6750;&#x8FDE;&#x63A5;</h5>
+&#x5C06;&#x4E24;&#x4E2A;&#x6E29;&#x6E7F;&#x5EA6;&#x4F20;&#x611F;&#x5206;&#x522B;&#x63A5;&#x5230;&#x638C;&#x63A7;&#x5B9D;&#x548C;&#x767E;&#x7075;&#x9E3D;&#x7684;13&#x53F7;&#x53E3;&#xFF0C;&#x6CE8;&#x610F;S&#x3001;V&#x3001;G&#x7684;&#x5BF9;&#x5E94;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233310gqig3l4zh3zmmyu4.jpg" alt="&#x767E;&#x7075;&#x9E3D;&#x4E0E;&#x6E29;&#x6E7F;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x7684;&#x8FDE;&#x63A5;">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233352hglllqlhggdgllz3.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233352zleegb9ubhdaaalu.jpg" alt="&#x638C;&#x63A7;&#x5B9D;&#x4E0E;&#x6E29;&#x6E7F;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x7684;&#x8FDE;&#x63A5;"><h5 id="&#x64CD;&#x4F5C;&#x51C6;&#x5907;&#xFF1A;">&#x64CD;&#x4F5C;&#x51C6;&#x5907;&#xFF1A;</h5>
+1&#x3001;&#x4E0B;&#x8F7D;&#x9002;&#x7528;&#x7684;SIOT&#xFF0C;&#x5E76;&#x8FD0;&#x884C;&#x3002;
+&#x672C;&#x9879;&#x76EE;&#x91C7;&#x96C6;&#x6570;&#x636E;&#x91C7;&#x7528;SIOT&#x7A0B;&#x5E8F;&#x3001;MQTT&#x534F;&#x8BAE;&#x3002;
+SIoT&#x662F;&#x4E00;&#x4E2A;&#x4E3A;&#x4E2D;&#x5C0F;&#x5B66;STEM&#x6559;&#x80B2;&#x5B9A;&#x5236;&#x7684;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x5F00;&#x6E90;MQTT&#x670D;&#x52A1;&#x5668;&#x7A0B;&#x5E8F;&#xFF0C;S&#x6307;&#x79D1;&#x5B66;&#xFF08;Science&#xFF09;&#x3001;&#x7B80;&#x5355;&#xFF08;Simple&#xFF09;&#x7684;&#x610F;&#x601D;&#x3002;SIoT&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x7269;&#x8054;&#x7F51;&#x6570;&#x636E;&#x7684;&#x6536;&#x96C6;&#x548C;&#x5BFC;&#x51FA;&#xFF0C;&#x662F;&#x91C7;&#x96C6;&#x79D1;&#x5B66;&#x6570;&#x636E;&#x7684;&#x6700;&#x597D;&#x9009;&#x62E9;&#x4E4B;&#x4E00;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233435tpzyi0i2eidg3w83.png" alt="">
+SIoT&#x4E3A;&#x201C;&#x865A;&#x8C37;&#x7269;&#x8054;&#x201D;&#x9879;&#x76EE;&#x7684;&#x6838;&#x5FC3;&#x8F6F;&#x4EF6;&#xFF0C;&#x662F;&#x4E3A;&#x4E86;&#x5E2E;&#x52A9;&#x4E2D;&#x5C0F;&#x5B66;&#x751F;&#x7406;&#x89E3;&#x7269;&#x8054;&#x7F51;&#x539F;&#x7406;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x591F;&#x57FA;&#x4E8E;&#x7269;&#x8054;&#x7F51;&#x6280;&#x672F;&#x5F00;&#x53D1;&#x5404;&#x79CD;&#x521B;&#x610F;&#x5E94;&#x7528;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233603pwzgrrrskcdydk77.png" alt="">
+MQTT&#xFF08;Message Queuing Telemetry Transport&#xFF0C;&#x6D88;&#x606F;&#x961F;&#x5217;&#x9065;&#x6D4B;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;-&#x670D;&#x52A1;&#x5668;&#x7684;&#x6D88;&#x606F;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x3002;
+MQTT&#x534F;&#x8BAE;&#x662F;&#x8F7B;&#x91CF;&#x3001;&#x7B80;&#x5355;&#x3001;&#x5F00;&#x653E;&#x548C;&#x6613;&#x4E8E;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x8FD9;&#x4E9B;&#x7279;&#x70B9;&#x4F7F;&#x5B83;&#x9002;&#x7528;&#x8303;&#x56F4;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233623c9q6mdpm0zqc05vz.png" alt="">
+&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;<a href="http://mindplus.dfrobot.com.cn/siot" target="_blank">http://mindplus.dfrobot.com.cn/siot</a>
+&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7535;&#x8111;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x5BF9;&#x5E94;&#x4E0B;&#x8F7D;SIoT&#x8F6F;&#x4EF6;&#x538B;&#x7F29;&#x5305;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202001/31/233750kkcxdgx5al2x5dyl.png" alt="">
+SIoT1.2 &#x662F;&#x4E00;&#x6B3E;&#x7EFF;&#x8272;&#x8F6F;&#x4EF6;&#xFF0C;&#x89E3;&#x538B;&#x540E;&#x5373;&#x53EF;&#x7ACB;&#x5373;&#x8FD0;&#x884C;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/000128pazzo4cop2xh0xab.png" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/000213wbz2ofvgohon6011.png" alt="">
+&#x6D4B;&#x6E29;&#x4EEA;&#x9700;&#x8981;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x901A;&#x8BAF;&#xFF0C;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x6B64;&#x7A97;&#x53E3;&#x82E5;&#x5173;&#x95ED;&#xFF0C;&#x5C06;&#x5BFC;&#x81F4;&#x6D4B;&#x6E29;&#x4EEA;&#x8FD0;&#x884C;&#x51FA;&#x9519;&#x3002;
+2&#x3001;&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8BBE;&#x7F6E;&#x597D;&#x9879;&#x76EE;&#x53CA;&#x8BBE;&#x5907;&#x3002;
+&#x8FD0;&#x884C;cmd&#xFF0C;&#x5728;&#x9ED1;&#x7A97;&#x53E3;&#x4E2D;&#x8F93;&#x5165;ipconfig&#xFF0C;&#x56DE;&#x8F66;&#xFF0C;&#x83B7;&#x5F97;&#x672C;&#x673A;IP&#x5730;&#x5740;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/000845r6l6euk5hk9aekn5.jpg" alt="">
+&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5730;&#x5740;&#x8F93;&#x5165;IP&#x5730;&#x5740;&#xFF0C;&#x5728;&#x540E;&#x9762;&#x52A0;&#x4E0A;&#x201D;: 8080&#x201C; &#x3002;&#x9700;&#x6CE8;&#x610F;&#x6B64;&#x5904;&#x7684;&#x5192;&#x53F7;&#x5FC5;&#x987B;&#x662F;&#x82F1;&#x6587;&#x72B6;&#x6001;&#xFF01;&#xFF01;&#xFF01;8080&#x4E3A;&#x7AEF;&#x53E3;&#x53F7;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/001118vkwyzwyjo9oqn4o2.png" alt="">
+&#x767B;&#x9646;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/001241p78ymj7p0yjsr77k.jpg" alt="">
+&#x8BBE;&#x7F6E;&#x9879;&#x76EE;&#x53CA;&#x8BBE;&#x5907;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/001417wyroiostx3eu4ukx.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/001417xvmkz8gpd4pnemje.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/001417nz3n111nmh53yzmn.jpg" alt=""><h5 id="&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#xFF1A;">&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#xFF1A;</h5>
+1&#x3001;&#x51C6;&#x5907;&#x8BED;&#x97F3;&#x6587;&#x4EF6;&#x53CA;&#x56FE;&#x50CF;&#x53D6;&#x6A21;&#x6587;&#x4EF6;&#x3002;
+2&#x3001;&#x7F16;&#x5199;&#x6D4B;&#x6E29;&#x7AEF;&#x7A0B;&#x5E8F;&#xFF0C;&#x547D;&#x540D;&#x65F6;&#x6807;&#x8BC6;&#x4E3A;&#x6D4B;&#x6E29;&#x4E00;&#x53F7;&#x3002;
+&#x5148;&#x8BBE;&#x7F6E;WIFI&#x3001;MQTT&#x3001;&#x7F51;&#x7EDC;&#x65F6;&#x533A;&#x7B49;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/003003iqqene5iiz5i4k95.jpg" alt="">
+&#x4E3A;&#x6D4B;&#x8BD5;&#x65B9;&#x4FBF;&#xFF0C;&#x6B64;&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x4E3A;2&#x5206;&#x949F;&#x68C0;&#x6D4B;&#x4E00;&#x6B21;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/003744qcmcxpch1kphzpf3.png" alt="">
+&#x5B9A;&#x65F6;&#x63D0;&#x9192;&#x3001;&#x6D4B;&#x6E29;&#xFF0C;&#x5C06;&#x7ED3;&#x679C;&#x53D1;&#x9001;&#x5230;MQTT&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x53D1;&#x9001;&#x5230;&#x63A5;&#x6536;&#x7AEF;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/003838gsesc274rw8a4cbz.png" alt="">
+&#x5224;&#x65AD;&#x4F53;&#x6E29;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/003950di9igiasfihia9yz.png" alt="">
+&#x672A;&#x5230;&#x68C0;&#x6D4B;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x65F6;&#xFF0C;&#x638C;&#x63A7;&#x677F;&#x5C4F;&#x5E55;&#x663E;&#x793A;&#x65F6;&#x949F;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/004104g5b8tccrfst8bjrj.png" alt="">
+&#x6D4B;&#x6E29;&#x4E00;&#x53F7;&#x5B8C;&#x6574;&#x7A0B;&#x5E8F;&#x622A;&#x56FE;&#xFF1A;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/015310gsdhz9fios9336fs.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/004525gce3mgsc9zs429vw.png" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/004525kv74d52atdav5onh.png" alt="">
+3&#x3001;&#x8FC1;&#x79FB;&#x6D4B;&#x6E29;&#x4E00;&#x53F7;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x4FEE;&#x6539;&#xFF0C;&#x547D;&#x540D;&#x65F6;&#x6807;&#x8BC6;&#x4E3A;&#x6D4B;&#x6E29;&#x4E8C;&#x53F7;&#x3002;
+&#x6709;&#x4E86;&#x6D4B;&#x6E29;&#x4E00;&#x53F7;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6D4B;&#x6E29;&#x4E8C;&#x53F7;&#x5C31;&#x7B80;&#x5355;&#x4E86;&#x8BB8;&#x591A;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x5176;&#x4E2D;&#x7684;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#x53CA;&#x9879;&#x76EE;&#x8BBE;&#x5907;&#x53F7;&#x5373;&#x53EF;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/005623iz34l67n64fin7qq.png" alt="">
+&#x6D4B;&#x6E29;&#x4E00;&#x53F7;&#x7684;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#xFF0C;&#x6BCF;2&#x5206;&#x949F;&#x7684;00&#x79D2;&#x5F00;&#x59CB;&#x63D0;&#x9192;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/004958xd399osrs9uh6opo.png" alt="">
+&#x6D4B;&#x6E29;&#x4E8C;&#x53F7;&#x7684;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#xFF0C;&#x6BCF;2&#x5206;&#x949F;&#x7684;20&#x79D2;&#x5F00;&#x59CB;&#x63D0;&#x9192;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/005125t20onrkn10l2xv7u.png" alt="">
+&#x6D4B;&#x6E29;&#x4E00;&#x53F7;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x53D1;&#x9001;&#x5230;&#x4E3B;&#x9898;cewen/1
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/005125plsnccsskbnk0xs7.png" alt="">
+&#x6D4B;&#x6E29;&#x4E8C;&#x53F7;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x53D1;&#x9001;&#x5230;&#x4E3B;&#x9898;cewen/2
+4&#x3001;&#x7F16;&#x5199;&#x63A5;&#x6536;&#x7AEF;&#x7A0B;&#x5E8F;&#x3002;
+&#x6CE8;&#x610F;&#xFF1A;&#x4E3A;&#x907F;&#x514D;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x51B2;&#x7A81;&#xFF0C;&#x5C06;&#x4E24;&#x4E2A;&#x6D4B;&#x6E29;&#x7AEF;&#x6253;&#x5F00;&#x5E7F;&#x64AD;&#x3001;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x53CA;&#x5173;&#x95ED;&#x5E7F;&#x64AD;&#x7684;&#x65F6;&#x95F4;&#x9519;&#x5F00;&#x3002;&#x63A5;&#x6536;&#x7AEF;&#x63A5;&#x6536;&#x3001;&#x663E;&#x793A;&#x6D88;&#x606F;&#x65F6;&#x7528;&#x53D8;&#x91CF;&#x5C06;&#x6765;&#x81EA;&#x4E24;&#x4E2A;&#x6D4B;&#x6E29;&#x7AEF;&#x7684;&#x6D88;&#x606F;&#x533A;&#x522B;&#x5F00;&#x6765;&#x3002;</li>
+</ul>
+<p>&#x7A0B;&#x5E8F;&#x4E2D;&#x5F00;&#x5934;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC;&#x53CA;MQTT&#x670D;&#x52A1;&#x5668;&#x90E8;&#x5206;&#x548C;&#x540E;&#x9762;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x4FE1;&#x606F;&#x65F6;&#x5C4F;&#x5E55;&#x663E;&#x793A;&#x65F6;&#x949F;&#x90E8;&#x5206;&#x4E0E;&#x6D4B;&#x6E29;&#x7684;&#x638C;&#x63A7;&#x677F;&#x7A0B;&#x5E8F;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x7A0B;&#x5E8F;&#x4E2D;&#x8BBE;&#x4E86;&#x53D8;&#x91CF;i&#xFF0C;&#x53D8;&#x91CF;i&#x8868;&#x793A;&#x63A5;&#x6536;&#x7AEF;&#x6536;&#x5230;&#x6D88;&#x606F;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x5947;&#x6570;&#x4E0E;&#x5076;&#x6570;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x4E24;&#x4E2A;&#x6D4B;&#x6E29;&#x7AEF;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/010837rmmx4uqg59qxv79q.png" alt="">
+&#x8BBE;&#x4E86;&#x53D8;&#x91CF;_msg&#xFF0C;&#x5B83;&#x8868;&#x793A;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/010837gasysts6s6u6ynue.png" alt="">
+&#x53C8;&#x8BBE;&#x4E86;&#x53D8;&#x91CF;num1&#x548C;num2&#xFF0C;&#x6839;&#x636E;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x6536;&#x5230;&#x7684;&#x6B21;&#x6570;&#x5224;&#x65AD;&#x8BE5;&#x6D88;&#x606F;&#x6765;&#x81EA;&#x54EA;&#x4E00;&#x4E2A;&#x6D4B;&#x6E29;&#x7AEF;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/010837na1ygumzyuug7tk4.png" alt="">
+ &#x7528;&#x662F;&#x5426;&#x6536;&#x5230;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x6D88;&#x606F;&#x6765;&#x51B3;&#x5B9A;&#x7A0B;&#x5E8F;&#x600E;&#x6837;&#x8FD0;&#x884C;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/011655cvgog9w77qa2wadn.png" alt="">
+&#x5982;&#x679C;&#x4F53;&#x6E29;&#x8D85;&#x8FC7;37&#x5EA6;&#xFF0C;&#x63A5;&#x6536;&#x7AEF;&#x7EA2;&#x706F;&#x95EA;&#x70C1;&#x3001;&#x8702;&#x9E23;&#x5668;&#x54CD;&#x8D77;&#x4EE5;&#x793A;&#x63D0;&#x9192;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/010837wll12wb01sfub1c0.png" alt="">
+   &#x5B8C;&#x6574;&#x7A0B;&#x5E8F;&#x5982;&#x4E0B;&#xFF1A;&#xFF08;&#x6B64;&#x5904;&#x7565;&#x53BB;&#x7F51;&#x7EDC;&#x8BBE;&#x7F6E;&#x90E8;&#x5206;&#xFF09;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/011902elz9kd9z65loj51y.png" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/202002/01/011902oo5to7gr4n71ccnt.png" alt=""></p>
+<h5 id="&#x6D4B;&#x8BD5;&#x6548;&#x679C;&#xFF1A;">&#x6D4B;&#x8BD5;&#x6548;&#x679C;&#xFF1A;</h5>
+<h5 id="&#x8D70;&#x8FC7;&#x7684;&#x5F2F;&#x8DEF;&#xFF1A;">&#x8D70;&#x8FC7;&#x7684;&#x5F2F;&#x8DEF;&#xFF1A;</h5>
+<p>1&#x3001;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x68C0;&#x6D4B;&#x5230;&#x7684;&#x6E29;&#x5EA6;&#x4E00;&#x76F4;&#x4E3A;0&#x3002;
+&#x539F;&#x56E0;&#xFF1A;&#x6E29;&#x6E7F;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x8981;&#x5728;5V&#x7684;&#x7535;&#x538B;&#x73AF;&#x5883;&#x4E0B;&#x624D;&#x80FD;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x638C;&#x63A7;&#x677F;&#x8FDE;&#x63A5;&#x7535;&#x8111;&#x540E;&#x53EA;&#x6709;3.3V&#x3002;
+&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;&#x6253;&#x5F00;&#x638C;&#x63A7;&#x5B9D;&#x7535;&#x6E90;&#x5F00;&#x5173;&#x3002;</p>
+<p>2&#x3001;&#x5728;WiFi&#x8FDE;&#x63A5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x63A5;&#x6536;&#x7AEF;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x63A5;&#x6536;&#x6D88;&#x606F;&#xFF0C;&#x5C4F;&#x5E55;&#x4E0A;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x663E;&#x793A;&#x3002;
+&#x539F;&#x56E0;&#xFF1A;WiFi&#x4E0E;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x6709;&#x51B2;&#x7A81;&#x3002;
+&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;&#x63A5;&#x6536;&#x7AEF;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x6B21;&#x6821;&#x51C6;&#x65F6;&#x95F4;&#x3002;&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x540E;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x7528;WiFi&#xFF0C;&#x53EF;&#x5C06;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x4E00;&#x76F4;&#x5F00;&#x542F;&#xFF0C;&#x4E0D;&#x5173;&#x95ED;&#x3002;</p>
+<h5 id="&#x9E23;&#x8C22;&#xFF1A;">&#x9E23;&#x8C22;&#xFF1A;</h5>
+<p>&#x5E2E;&#x52A9;&#x89E3;&#x51B3;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x95EE;&#x9898;&#x7684;&#x5927;&#x5496;&#x8001;&#x5E08;&#xFF1A;&#x5F20;&#x7389;&#x534E;&#x8001;&#x5E08;&#x3001;&#x8C6A;&#x8001;&#x5E08;&#x3001;&#x73E0;&#x97F5;&#x8001;&#x5E08;&#x3001;&#x51A5;&#x60F3;&#x8005;&#x8001;&#x5E08;&#x3001;&#x7518;&#x8083;&#x7684;&#x9648;&#x8001;&#x5E08;&#x3001;&#x98CE;&#x96E8;&#x65E0;&#x963B;&#x8001;&#x5E08;&#x2026;&#x2026;&#xFF08;&#x53EF;&#x80FD;&#x6709;&#x9057;&#x6F0F;&#xFF0C;&#x82E5;&#x9057;&#x6F0F;&#x4E86;&#x8BF7;&#x89C1;&#x8C05;&#x54C8;&#xFF01;&#xFF09;
+&#x5E2E;&#x52A9;&#x89E3;&#x51B3;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x95EE;&#x9898;&#x7684;&#x5927;&#x5496;&#x8001;&#x5E08;&#xFF1A;&#x6731;&#x73B0;&#x4F1F;&#x8001;&#x5E08;&#x3002;
+&#x6DF7;&#x8FF9;&#x5728;DF&#x8BBA;&#x575B;&#xFF0C;&#x4EE5;&#x540E;&#x6211;&#x4EEC;&#x5F53;&#x5730;&#x641E;&#x521B;&#x5BA2;&#x6D3B;&#x52A8;&#xFF0C;&#x6211;&#x5C31;&#x7B97;&#x5565;&#x4E5F;&#x4E0D;&#x5E72;&#xFF0C;&#x5149;&#x662F;&#x6570;&#x4E00;&#x6570;&#x8BBA;&#x575B;&#x91CC;&#x5927;&#x5496;&#x4EEC;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5C31;&#x80FD;&#x552C;&#x5F97;&#x4ED6;&#x4EEC;&#x4E00;&#x6123;&#x4E00;&#x6123;&#x7684;~~&#xFF08;&#x2010;&#xFF3E;&#x25BD;&#xFF3E;&#x2010;&#xFF09;&#xFF08;&#x2010;&#xFF3E;&#x25BD;&#xFF3E;&#x2010;&#xFF09;</p>
+<h2 id="&#x8BA9;&#x6211;&#x4EEC;&#x9020;&#x4E00;&#x628A;&#x7EA2;&#x5916;&#x6D4B;&#x6E29;&#x67AA;&#x6765;&#x611F;&#x53D7;&#x590F;&#x5929;---&#x4F7F;&#x7528;firebeetle-esp32">&#x8BA9;&#x6211;&#x4EEC;&#x9020;&#x4E00;&#x628A;&#x7EA2;&#x5916;&#x6D4B;&#x6E29;&#x67AA;&#x6765;&#x611F;&#x53D7;&#x590F;&#x5929; - &#x4F7F;&#x7528;FireBeetle ESP32</h2>
+<p>&#x4F5C;&#x8005;&#xFF1A;bobo
+<a href="https://mc.dfrobot.com.cn/thread-26644-1-1.html" target="_blank">https://mc.dfrobot.com.cn/thread-26644-1-1.html</a>
+&#x6700;&#x8FD1;&#x5929;&#x6C14;&#x592A;&#x70ED;&#x4E86;&#xFF0C;&#x8FDB;&#x5165;&#x6C7D;&#x8F66;&#x8F66;&#x53A2;&#x79D2;&#x53D8;&#x70E4;&#x9E2D;&#x3002;&#x53BB;&#x9A91;&#x4E2A;&#x5171;&#x4EAB;&#x5355;&#x8F66;&#xFF0C;&#x6211;&#x7684;&#x5929;&#xFF0C;&#x8FD9;&#x4E0D;&#x662F;&#x9A91;&#x8F66;&#xFF0C;&#x7B80;&#x76F4;&#x662F;&#x5728;&#x70E4;&#x8089;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x7422;&#x78E8;&#x662F;&#x4E0D;&#x662F;&#x641E;&#x4E00;&#x4E2A;&#x6D4B;&#x6E29;&#x67AA;&#x6765;&#x68C0;&#x6D4B;&#x4E0B;&#x5EA7;&#x6905;&#x7684;&#x6E29;&#x5EA6;&#x3002;&#x8FD9;&#x79CD;&#x5C0F;&#x513F;&#x79D1;&#x7684;&#x95EE;&#x9898;&#x600E;&#x4E48;&#x80FD;&#x96BE;&#x5012;&#x6211;&#x8FD9;&#x4E2A;maker&#x5462;&#x3002;&#x624B;&#x4E0A;&#x6B63;&#x597D;&#x6709;DFRobot &#x51FA;&#x7684;FireBeetle ESP32&#x4E3B;&#x677F;&#x548C; MLX90614&#x975E;&#x63A5;&#x89E6;&#x5F0F;&#x7EA2;&#x5916;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#xFF0C;&#x81EA;&#x5DF1;&#x9020;&#x4E00;&#x6B3E;&#x6D4B;&#x6E29;&#x67AA;&#x51FA;&#x6765;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162122xx4cd4yx4vxoacwe.png" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162123wzz8788g28a0jar1.png" alt="">
+&#x89C6;&#x9891;
+<a href="https://v.qq.com/x/page/y0531558x7g.html" target="_blank">https://v.qq.com/x/page/y0531558x7g.html</a>
+&#x4E3B;&#x677F;&#x9009;&#x7528;&#x4E86;DFRobot&#x6700;&#x65B0;&#x51FA;&#x7684;FireBeetleESP32&#x4E3B;&#x677F;&#xFF0C;&#x4F53;&#x79EF;&#x6BD4;&#x4F20;&#x7EDF;&#x7684;Arduino Uno&#x4E3B;&#x677F;&#x5C0F;&#x5F88;&#x591A;&#xFF0C;&#x53E6;&#x5916;FireBeetle ESP32&#x4E3B;&#x677F;&#x81EA;&#x5E26;&#x7535;&#x6C60;&#x63A5;&#x53E3;&#x548C;&#x5145;&#x7535;&#x7535;&#x8DEF;&#xFF0C;&#x975E;&#x5E38;&#x9002;&#x5408;&#x7528;&#x4E8E;&#x4F4E;&#x529F;&#x8017;&#x4FBF;&#x643A;&#x8BBE;&#x5907;&#x7684;&#x5236;&#x4F5C;&#x3002;</p>
+<p>&#x4F20;&#x611F;&#x5668;&#x4F7F;&#x7528;&#x4E86;DFRobot&#x51FA;&#x54C1;&#x7684;MLX90614&#x975E;&#x63A5;&#x89E6;&#x5F0F;&#x7EA2;&#x5916;&#x6D4B;&#x6E29;&#x4F20;&#x611F;&#x5668;&#xFF0C;&#x548C;&#x4F20;&#x7EDF;&#x7684;LM35&#x3001;DS18B20&#x8FD9;&#x4E9B;&#x4F20;&#x7EDF;&#x7684;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x6BD4;&#x8F83;&#xFF0C;&#x8FD9;&#x6B3E;&#x4F20;&#x611F;&#x5668;&#x53EF;&#x4EE5;&#x975E;&#x63A5;&#x89E6;&#x7684;&#x65B9;&#x5F0F;&#x6D4B;&#x91CF;&#x5230;&#x76EE;&#x6807;&#x7269;&#x4F53;&#x7684;&#x6E29;&#x5EA6;&#x3002;&#x4F20;&#x611F;&#x5668;&#x662F;IIC&#x63A5;&#x53E3;&#xFF0C;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x8FDE;&#x63A5;&#x5230;&#x4E3B;&#x677F;&#x4E0A;&#x4F7F;&#x7528;&#x3002;
+&#x663E;&#x793A;&#x90E8;&#x5206;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x5757; DFRobot&#x6700;&#x8FD1;&#x65B0;&#x751F;&#x4EA7;&#x7684; GravityIIC OLED-2864&#x663E;&#x793A;&#x5C4F;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x6B3E;&#x975E;&#x5E38;&#x6F02;&#x4EAE;&#x7684;&#x84DD;&#x8272;&#x81EA;&#x53D1;&#x5149;&#x5C4F;&#x5E55;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C4F;&#x5E55;&#x6709;&#x91D1;&#x5C5E;&#x8FB9;&#x6846;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x5C4F;&#x5E55;&#x5728;&#x5236;&#x4F5C;&#x548C;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#x73BB;&#x7483;&#x7834;&#x88C2;&#x635F;&#x574F;&#x3002;&#x8F6F;&#x4EF6;&#x4F7F;&#x7528;&#x4E86;DFRobot&#x5F00;&#x53D1;&#x7684;uPyCraftMicroPython IDE&#xFF0C;&#x4F7F;&#x7528;python&#x8FDB;&#x884C;&#x7F16;&#x7A0B;&#xFF0C;&#x964D;&#x4F4E;&#x4E86;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x96BE;&#x5EA6;&#x3002;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162126pk33zt3e3k37z91k.jpg" alt="&#x9009;&#x7528;&#x7684;&#x5143;&#x4EF6;"></p>
+<h5 id="&#x90E8;&#x4EF6;&#x6E05;&#x5355;&#xFF1A;">&#x90E8;&#x4EF6;&#x6E05;&#x5355;&#xFF1A;</h5>
+<ul>
+<li>FireBeetle ESP32 &#x4E3B;&#x677F; * 1&#x53EA;  &#xFF08;<a href="http://www.dfrobot.com.cn/goods-1394.html&#xFF09;" target="_blank">http://www.dfrobot.com.cn/goods-1394.html&#xFF09;</a></li>
+<li>MLX90614&#x975E;&#x63A5;&#x89E6;&#x5F0F;&#x7EA2;&#x5916;&#x6D4B;&#x6E29;&#x4F20;&#x611F;&#x5668; * 1&#x53EA;&#xFF08;<a href="http://www.dfrobot.com.cn/goods-1302.html&#xFF09;" target="_blank">http://www.dfrobot.com.cn/goods-1302.html&#xFF09;</a></li>
+<li>Gravity IIC OLED-2864 &#x663E;&#x793A;&#x5C4F; * 1&#x53EA;  &#xFF08;<a href="http://www.dfrobot.com.cn/goods-1374.html&#xFF09;" target="_blank">http://www.dfrobot.com.cn/goods-1374.html&#xFF09;</a></li>
+<li>3.7V 400mAh&#x9502;&#x7535;&#x6C60; * 1&#x53EA;</li>
+<li>6mm&#x76F4;&#x5F84;&#x7EA2;&#x5149;&#x6FC0;&#x5149;&#x53D1;&#x5C04;&#x5668; * 1&#x53EA;</li>
+<li>C&amp;K&#x6ED1;&#x52A8;&#x5F00;&#x5173; * 1&#x53EA;</li>
+<li>3D&#x6253;&#x5370;&#x5916;&#x58F3;&#x4E0A;&#x76D6;&#x548C;&#x4E0B;&#x76D6; * 1&#x5957;</li>
+</ul>
+<h6 id="&#x5DE5;&#x5177;&#xFF1A;">&#x5DE5;&#x5177;&#xFF1A;</h6>
+<ul>
+<li>&#x5B89;&#x6CF0;&#x4FE1;AT936A&#x65E0;&#x94C5;&#x6052;&#x6E29;&#x710A;&#x53F0;&#xFF08;<a href="http://www.dfrobot.com.cn/goods-922.html&#xFF09;" target="_blank">http://www.dfrobot.com.cn/goods-922.html&#xFF09;</a></li>
+<li>Overlord Pro 3D&#x6253;&#x5370;&#x673A;&#xFF08;<a href="http://www.dfrobot.com.cn/goods-1136.html&#xFF09;" target="_blank">http://www.dfrobot.com.cn/goods-1136.html&#xFF09;</a></li>
+<li>401 &#x80F6;&#x6C34;</li>
+<li>&#x70ED;&#x7194;&#x80F6;&#x67AA;</li>
+</ul>
+<h5 id="&#x6240;&#x7528;&#x5230;&#x7684;&#x8F6F;&#x4EF6;&#xFF1A;">&#x6240;&#x7528;&#x5230;&#x7684;&#x8F6F;&#x4EF6;&#xFF1A;</h5>
+<ul>
+<li>MLX90614.py MLX90614&#x975E;&#x63A5;&#x89E6;&#x5F0F;&#x7EA2;&#x5916;&#x6D4B;&#x6E29;&#x4F20;&#x611F;&#x5668; &#x5E93;&#x6587;&#x4EF6;</li>
+<li>SSD1306.py  Gravity IIC OLED-2864 &#x663E;&#x793A;&#x5C4F; &#x5E93;&#x6587;&#x4EF6;</li>
+<li>piclib.py      &#x9879;&#x76EE;&#x4F7F;&#x7528;&#x7684;&#x663E;&#x793A;&#x56FE;&#x7247;&#x548C;16*24&#x5B57;&#x4F53; &#x5E93;&#x6587;&#x4EF6;</li>
+<li>InfraRedThermometer.py  &#x9879;&#x76EE;&#x4EE3;&#x7801;&#x6E90;&#x6587;&#x4EF6;</li>
+<li>uPyCraftMicroPython IDE  &#xFF08;&#x70B9;&#x51FB;&#x4E0B;&#x8F7D;&#xFF09;</li>
+<li>PCtoLCD2002&#x6DB2;&#x6676;&#x53D6;&#x6A21;&#x8F6F;&#x4EF6;</li>
+<li>3D&#x6253;&#x5370;&#x5207;&#x7247;&#x8F6F;&#x4EF6;Cura</li>
+<li>3D print- left part.stl   3D&#x6253;&#x5370;&#x6587;&#x4EF6; &#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Overlord Pro 3D&#x6253;&#x5370;&#x673A; &#x6253;&#x5370;</li>
+<li>3D print- right part.stl  3D&#x6253;&#x5370;&#x6587;&#x4EF6;</li>
+</ul>
+<h5 id="&#x5236;&#x4F5C;&#x6B65;&#x9AA4;&#xFF1A;">&#x5236;&#x4F5C;&#x6B65;&#x9AA4;&#xFF1A;</h5>
+<p>1&#x3001;  &#x5982;&#x4E0B;&#x56FE;&#x710A;&#x63A5;&#x597D;&#x5404;&#x4E2A;&#x90E8;&#x4EF6;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162126diliroll4rkpdpol.jpg" alt="&#x63A5;&#x7EBF;&#x56FE;">
+2&#x3001;  &#x4F7F;&#x7528;PCtoLCD2002&#x6DB2;&#x6676;&#x53D6;&#x6A21;&#x8F6F;&#x4EF6;&#x5C06;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x56FE;&#x7247;&#x548C;16X24&#x5B57;&#x4F53;&#x8F6C;&#x6362;&#x4E3A;16&#x8FDB;&#x5236;&#x4EE3;&#x7801;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162128y1r44zq2329vbhtl.jpg" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162127yn4ozegbcey6146b.jpg" alt="&#x6309;&#x7167;&#x4E0A;&#x56FE;&#x6A21;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x548C;&#x53D6;&#x6A21;
+">
+3&#x3001;&#x4F7F;&#x7528;uPyCraft  MicroPython IDE &#x8FDB;&#x884C;&#x7F16;&#x7A0B;&#xFF0C;&#x70E7;&#x5199;&#x4EE3;&#x7801;&#x5230;FireBeetleESP32&#x4E3B;&#x677F;&#x4E0A;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162128pzs9kjm3788fadbf.png" alt="&#x70E7;&#x5199;&#x597D;&#x4EE3;&#x7801;&#x540E;&#x6D4B;&#x8BD5;&#x7A0B;&#x5E8F;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5DE5;&#x4F5C;"></p>
+<p>&#x4EE3;&#x7801;&#x5F71;&#x54CD;&#x9605;&#x8BFB;&#x4E0D;&#x52A0;
+4&#x3001;  &#x6839;&#x636E;&#x90E8;&#x4EF6;&#x5C3A;&#x5BF8;&#x8BBE;&#x8BA1;&#x5916;&#x58F3;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162126rq051he99fr9hosq.png" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162125x337007kqzwqf0z0.png" alt="">
+5&#x3001;  &#x4F7F;&#x7528;3D&#x6253;&#x5370;&#x5207;&#x7247;&#x8F6F;&#x4EF6;Cura&#x5236;&#x4F5C;3D&#x6253;&#x5370;&#x6587;&#x4EF6;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162125assibbss3s3b23t7.png" alt="">
+6&#x3001;  &#x4F7F;&#x7528;Overlord 3D&#x6253;&#x5370;&#x673A;&#x6253;&#x5370;&#x51FA;&#x5916;&#x58F3;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162124dlkzbucsab56st5d.png" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162124rnw2xsciqec212qi.png" alt="">
+7&#x3001;&#x4F7F;&#x7528;&#x70ED;&#x7194;&#x80F6;&#x548C;&#x80F6;&#x6C34;&#x5C06;&#x90E8;&#x4EF6;&#x5B89;&#x88C5;&#x5230;&#x6253;&#x5370;&#x7684;&#x5916;&#x58F3;&#x5185;
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162130ivp5l2vrsawtpp99.png" alt="">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162129ulsmykik5ns8m418.png" alt="">
+8&#x3001;&#x6D4B;&#x8BD5;&#x6E29;&#x5EA6;
+<img src="http://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162122xx4cd4yx4vxoacwe.png" alt="&#x6D4B;&#x91CF;&#x624B;&#x638C;&#x6E29;&#x5EA6;">
+<img src="http://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162123wzz8788g28a0jar1.png" alt="&#x6D4B;&#x91CF;&#x6469;&#x62DC;&#x5171;&#x4EAB;&#x5355;&#x8F66;&#x684C;&#x57AB;&#x6E29;&#x5EA6;">
+<img src="https://mc.dfrobot.com.cn/data/attachment/forum/201708/02/162129ienfddocwind1ddn.png" alt="&#x6D4B;&#x91CF;&#x51B0;&#x7BB1;&#x51B7;&#x51BB;&#x5BA4;&#x6E29;&#x5EA6;"></p>
+<h5 id="&#x9644;&#x4EF6;&#x8D44;&#x6599;&#x4E0B;&#x8F7D;&#xFF1A;">&#x9644;&#x4EF6;&#x8D44;&#x6599;&#x4E0B;&#x8F7D;&#xFF1A;</h5>
+<ul>
+<li>MLX90614.py MLX90614&#x975E;&#x63A5;&#x89E6;&#x5F0F;&#x7EA2;&#x5916;&#x6D4B;&#x6E29;&#x4F20;&#x611F;&#x5668; &#x5E93;&#x6587;&#x4EF6;</li>
+<li>SSD1306.py  Gravity IIC OLED-2864 &#x663E;&#x793A;&#x5C4F; &#x5E93;&#x6587;&#x4EF6;</li>
+<li>piclib.py      &#x9879;&#x76EE;&#x4F7F;&#x7528;&#x7684;&#x663E;&#x793A;&#x56FE;&#x7247;&#x548C;16*24&#x5B57;&#x4F53; &#x5E93;&#x6587;&#x4EF6;</li>
+<li>InfraRedThermometer.py  &#x9879;&#x76EE;&#x4EE3;&#x7801;&#x6E90;&#x6587;&#x4EF6;</li>
+<li>uPyCraftMicroPython IDE  &#xFF08;&#x70B9;&#x51FB;&#x4E0B;&#x8F7D;&#xFF09;</li>
+<li>PCtoLCD2002&#x6DB2;&#x6676;&#x53D6;&#x6A21;&#x8F6F;&#x4EF6;</li>
+<li>3D print- left part.stl   3D&#x6253;&#x5370;&#x6587;&#x4EF6; &#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528; Overlord Pro 3D&#x6253;&#x5370;&#x673A; &#x6253;&#x5370;</li>
+<li>3D print- right part.stl  3D&#x6253;&#x5370;&#x6587;&#x4EF6;</li>
+</ul>
+<p>&#x81F3;&#x6B64;&#x4E00;&#x4E2A;&#x5B9E;&#x7528;&#x7684;&#x975E;&#x63A5;&#x89E6;&#x6D4B;&#x6E29;&#x67AA;&#x5C31;&#x5236;&#x4F5C;&#x5B8C;&#x6210;&#x4E86;&#x3002;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x4FEE;&#x6539;&#x7A0B;&#x5E8F;&#x3002;&#x4F8B;&#x5982;&#x4F7F;&#x7528;FireBeetle ESP32&#x4E3B;&#x677F;&#x7684;WiFi&#x548C;BLE&#x84DD;&#x7259;&#x5C06;&#x6D4B;&#x6E29;&#x6570;&#x636E;&#x4E0A;&#x4F20;&#x5230;&#x7269;&#x8054;&#x7F51;&#x6216;&#x8005;&#x624B;&#x673A;&#x4E0A;&#x3002;&#xFF08;&#x6211;&#x7ECF;&#x5E38;&#x51FA;&#x95E8;&#x540E;&#x60F3;&#x4E0D;&#x8D77;&#x6765;&#x6709;&#x6CA1;&#x6709;&#x5173;&#x95ED;&#x71C3;&#x6C14;&#x7076;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x6B3E;&#x7269;&#x8054;&#x7F51;&#x7684;&#x6D4B;&#x6E29;&#x67AA;&#x8FDC;&#x7A0B;&#x67E5;&#x770B;&#x662F;&#x5426;&#x6709;&#x5173;&#x95ED;&#x71C3;&#x6C14;&#x7076;&#x3002;&#xFF09;</p>
+<pre><code class="lang-html">&#x4F5C;&#x8005;: DF&#x521B;&#x5BA2;&#x793E;&#x533A;
+&#x94FE;&#x63A5;: https://mc.dfrobot.com.cn/&#x4E09;&#x4E2A;&#x6D4B;&#x6E29;&#x5668;.MD
+&#x6765;&#x6E90;: DF&#x521B;&#x5BA2;&#x793E;&#x533A;
+&#x672C;&#x6587;&#x539F;&#x521B;&#x53D1;&#x5E03;&#x4E8E;&#x300C;DF&#x521B;&#x5BA2;&#x793E;&#x533A;&#x300D;,&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;,&#x8C22;&#x8C22;&#x5408;&#x4F5C;!
+</code></pre>
+<p><img src="https://mc.dfrobot.com.cn/template/zhanzhuai_v/images/logo.png" alt="https://mc.dfrobot.com.cn/template/zhanzhuai_v/images/logo.png"> </p>
+<p><footer class="page-footer"><span class="copyright">&#xA9; DF&#x521B;&#x5BA2;&#x793E;&#x533A; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-02-12 15:26:45
+</span></footer></p>
+<div id="gitalk-container"></div>
+                </div>
+                <script src="https://my.openwrite.cn/js/readmore.js"></script>
+                <script>
+                    var enablePlugin = false;
+                    var allowDomain = "localhost";
+                    if(allowDomain){
+                        var currentDomain = location.hostname;
+                        if ($.isArray(allowDomain)) {
+                            $.each(allowDomain, function(index, item) {
+                                if (currentDomain == item) {
+                                    enablePlugin = true;
+                                    return false;
+                                }
+                            });
+                        }else{
+                           if (currentDomain == allowDomain) {
+                                enablePlugin = true;
+                            }
+                        }
+                    }else{
+                        enablePlugin = true;
+                    }
+                    
+                    if(enablePlugin){
+                        var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+                        if (!isMobile) {
+                            var btw = new BTWPlugin();
+                            btw.init({"allowDomain":"localhost","blogId":"21047-1585724546375-833","name":"DF创客社区","qrcode":"http://df.yirenliu.cn/FrbGVMroj_tBa1OR9EcyPBzJ3ba_","keyword":"VIP","id":"vip-container"});
+                        }
+                    }
+                </script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="哈士奇.html" class="navigation navigation-prev " aria-label="Previous page: 哈士奇">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="时空传送枪.html" class="navigation navigation-next " aria-label="Next page: 时空传送枪">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"三个测温器","level":"1.3","depth":1,"next":{"title":"时空传送枪","level":"1.4","depth":1,"path":"时空传送枪.MD","ref":"时空传送枪.MD","articles":[]},"previous":{"title":"哈士奇","level":"1.2","depth":1,"path":"哈士奇.MD","ref":"哈士奇.MD","articles":[]},"dir":"ltr"},"config":{"plugins":["donate","github-buttons@2.1.0","edit-link","copyright","readmore","tbfed-pagefooter","mygitalk","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy DF创客社区","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"copyright":{"copyProtect":true,"site":"https://mc.dfrobot.com.cn/","author":"DF创客社区","website":"DF创客社区","image":"https://mc.dfrobot.com.cn/template/zhanzhuai_v/images/logo.png"},"search":{},"readmore":{"allowDomain":"localhost","blogId":"21047-1585724546375-833","name":"DF创客社区","qrcode":"http://df.yirenliu.cn/FrbGVMroj_tBa1OR9EcyPBzJ3ba_","keyword":"VIP"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://sphard.com/images/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://sphard.com/images/wechatpay.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"repo":"darrenliuwei/gitbook","types":["star"],"size":"small"},"mygitalk":{"flipMoveOptions":{},"clientID":"080aebb9a762ed51c5d9","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["RalstonLiu"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook","owner":"RalstonLiu","enableHotKey":true,"clientSecret":"1abbb460c75e055fbd51c6e04c6b7b4ac47a6e69","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/darrenliuwei/gitbook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sphard","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","gitbook":"*","description":"gitbook电子书教程"},"file":{"path":"三个测温器.MD","mtime":"2020-02-12T07:26:45.948Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-01T08:33:47.128Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
