@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [第一章](二哈识图品牌.MD)
+* [二哈识图](二哈识图品牌.MD)
 ## 第二章
 ### 第一节
 ### 第二节
