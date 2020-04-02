@@ -12,7 +12,7 @@
         "copyright",
         "readmore",
         "tbfed-pagefooter",
-        "mygitalk"
+        "mygitalk","-lunr", "-search", "search-pro"
     ],
 
     "pluginsConfig": {
