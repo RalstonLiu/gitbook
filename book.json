@@ -12,7 +12,18 @@
         "copyright",
         "readmore",
         "tbfed-pagefooter",
-        "mygitalk","-lunr", "-search", "search-pro"
+        "mygitalk","-lunr", "-search", "search-pro",
+        "splitter",
+        "toggle-chapters",
+        "advanced-emoji",
+        "simple-page-toc",
+        "sitemap-general",
+        "favicon",
+        "copy-code-button",
+        "rss",
+        "sitemap",
+        "anchor-navigation-ex",
+        "image-captions"
     ],
 
     "pluginsConfig": {
@@ -59,6 +70,40 @@
        "owner": "RalstonLiu",
        "admin": ["RalstonLiu"],
        "distractionFreeMode": false
-   }
+   },
+   "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+        "sitemap-general": {
+            "prefix": "https://blog.yirenliu.cn/gitbook/"
+        },
+        "favicon": {
+       "shortcut": "assets/images/favicon.ico",
+       "bookmark": "assets/images/favicon.ico",
+       "appleTouch": "assets/images/apple-touch-icon.png",
+       "appleTouchMore": {
+           "120x120": "assets/images/apple-touch-icon-120x120.png",
+           "180x180": "assets/images/apple-touch-icon-180x180.png"
+       }
+   },
+
+        "sitemap": {
+            "hostname": "https://blog.yirenliu.cn/gitbook"
+        },
+        "rss": {
+      "title": "My amazing book",
+      "description": "This is the best book ever.",
+      "author": "Denys Dovhan",
+      "feed_url": "https://blog.yirenliu.cn/gitbook/rss",
+      "site_url": "https://blog.yirenliu.cn/gitbook/",
+      "managingEditor": "writer@book.org (Denys Dovhan)",
+      "webMaster": "webmaster@book.org (Denys Dovhan)",
+      "categories": [
+        "awesome",
+        "book",
+        "gitbook"
+      ]
+    }
     }
 }
