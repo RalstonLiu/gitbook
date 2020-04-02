@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[My amazing book]]></title>
+        <description><![CDATA[This is the best book ever.]]></description>
+        <link>https://blog.yirenliu.cn/gitbook/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 02 Apr 2020 06:05:12 GMT</lastBuildDate>
+        <atom:link href="https://blog.yirenliu.cn/gitbook/rss" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[Denys Dovhan]]></author>
+        <managingEditor><![CDATA[writer@book.org (Denys Dovhan)]]></managingEditor>
+        <webMaster><![CDATA[webmaster@book.org (Denys Dovhan)]]></webMaster>
+        <category><![CDATA[awesome]]></category>
+        <category><![CDATA[book]]></category>
+        <category><![CDATA[gitbook]]></category>
+        <item>
+            <title><![CDATA[简介]]></title>
+            <description><![CDATA[DF创客社区电子书测试]]></description>
+            <link>https://blog.yirenliu.cn/gitbook/</link>
+            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/</guid>
+            <dc:creator><![CDATA[Denys Dovhan]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[2020年，3月4日，二哈识图(HuskyLens)震撼首发！
+您的人工智能之旅就此启航！]]></description>
+            <link>https://blog.yirenliu.cn/gitbook/哈士奇.MD</link>
+            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/哈士奇.MD</guid>
+            <dc:creator><![CDATA[Denys Dovhan]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[作者：狄老师
+https://mc.dfrobot.com.cn/thread-302584-1-1.html]]></description>
+            <link>https://blog.yirenliu.cn/gitbook/三个测温器.MD</link>
+            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/三个测温器.MD</guid>
+            <dc:creator><![CDATA[Denys Dovhan]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[Rick and Morty(瑞克与莫蒂)是最近我最喜欢的美剧动画片，现在已经是第四季，已经成功路转粉了。]]></description>
+            <link>https://blog.yirenliu.cn/gitbook/时空传送枪.MD</link>
+            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/时空传送枪.MD</guid>
+            <dc:creator><![CDATA[Denys Dovhan]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://blog.yirenliu.cn/gitbook/树莓派是什么？能吃吗？.html</link>
+            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/树莓派是什么？能吃吗？.html</guid>
+            <dc:creator><![CDATA[Denys Dovhan]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Sequino]]></title>
+            <description><![CDATA[A clock which rewrites time again and again.]]></description>
+            <link>https://blog.yirenliu.cn/gitbook/Sequino.html</link>
+            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/Sequino.html</guid>
+            <dc:creator><![CDATA[Denys Dovhan]]></dc:creator>
+        </item>
+    </channel>
+</rss>
