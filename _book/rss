@@ -4,15 +4,15 @@
         <description><![CDATA[记录 GitBook 的配置和一些插件的使用]]></description>
         <link>https://blog.yirenliu.cn/gitbook/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 02 Apr 2020 06:48:04 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Apr 2020 07:27:17 GMT</lastBuildDate>
         <atom:link href="https://blog.yirenliu.cn/gitbook/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Jikai Zhang]]></author>
         <managingEditor><![CDATA[ralstonish@gmail.com]]></managingEditor>
         <webMaster><![CDATA[ralstonish@gmail.com]]></webMaster>
         <category><![CDATA[gitbook]]></category>
         <item>
-            <title><![CDATA[简介]]></title>
-            <description><![CDATA[DF创客社区电子书测试]]></description>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[DF创客社区是一个线上创客学习与交流的平台，致力于让创客和渴望成为创客的人们在这里进行交流、思维碰撞，一起分享创造的喜悦。]]></description>
             <link>https://blog.yirenliu.cn/gitbook/</link>
             <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/</guid>
             <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
