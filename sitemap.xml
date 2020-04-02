@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>https://blog.yirenliu.cn/./</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.yirenliu.cn/哈士奇.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.yirenliu.cn/三个测温器.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.yirenliu.cn/时空传送枪.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.yirenliu.cn/树莓派是什么？能吃吗？.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://blog.yirenliu.cn/Sequino.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.yirenliu.cn/gitbook/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.yirenliu.cn/gitbook/哈士奇.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.yirenliu.cn/gitbook/三个测温器.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.yirenliu.cn/gitbook/时空传送枪.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.yirenliu.cn/gitbook/树莓派是什么？能吃吗？.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://blog.yirenliu.cn/gitbook/Sequino.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
