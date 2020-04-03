@@ -56,7 +56,10 @@
         "chart@^0.2.0",
         "mygitalk",
         "copyright",
-        "openwrite"
+        "openwrite",
+        "-expandable-chapters-small",
+        "expandable-chapters",
+        "chapter-fold"
     ],
 
     "pluginsConfig": {
