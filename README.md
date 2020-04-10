@@ -1,6 +1,8 @@
 ## DF创客社区介绍
 
 
+<img src="http://df.yirenliu.cn/FnTdRxrFh-aW9kWctUw3OwXDs1UL" width = 80% height = 80% div align=center />
+
 ### 【普通版】
 
 DF创客社区是一个线上创客学习与交流的平台，致力于让创客和渴望成为创客的人们在这里进行交流、思维碰撞，一起分享创造的喜悦。
