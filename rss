@@ -4,7 +4,7 @@
         <description><![CDATA[记录 GitBook 的配置和一些插件的使用]]></description>
         <link>https://blog.yirenliu.cn/gitbook/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 03 Apr 2020 01:49:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Apr 2020 09:09:47 GMT</lastBuildDate>
         <atom:link href="https://blog.yirenliu.cn/gitbook/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[Jikai Zhang]]></author>
         <managingEditor><![CDATA[ralstonish@gmail.com]]></managingEditor>
@@ -41,16 +41,17 @@ https://mc.dfrobot.com.cn/thread-302584-1-1.html]]></description>
             <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
-            <link>https://blog.yirenliu.cn/gitbook/树莓派是什么？能吃吗？.html</link>
-            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/树莓派是什么？能吃吗？.html</guid>
-            <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
-        </item>
-        <item>
             <title><![CDATA[Sequino]]></title>
             <description><![CDATA[A clock which rewrites time again and again.]]></description>
             <link>https://blog.yirenliu.cn/gitbook/Sequino.html</link>
             <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/Sequino.html</guid>
+            <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[小小的beetle完成一个棋盘？当然不行，所以要请出我们的猪脚----IO扩展板]]></description>
+            <link>https://blog.yirenliu.cn/gitbook/用beetle做一个贪玩棋盘.html</link>
+            <guid isPermaLink="true">https://blog.yirenliu.cn/gitbook/用beetle做一个贪玩棋盘.html</guid>
             <dc:creator><![CDATA[Jikai Zhang]]></dc:creator>
         </item>
     </channel>
